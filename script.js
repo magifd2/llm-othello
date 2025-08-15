@@ -152,7 +152,7 @@ ${boardText}合法手:
 {"row": <行番号>, "col": <列番号>}`;
 
     try {
-        const response = await fetch('http://localhost:1234/v1/chat/completions', {
+        const response = await fetch('/llm-proxy/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
